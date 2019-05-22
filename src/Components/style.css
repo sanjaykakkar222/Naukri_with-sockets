@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 23%;
+    padding: 0 10px;
+    margin: 15px;
+  }
+  .notFound{
+    margin-top: 25%;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 15px;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card{
+   background-color: beige;
+   margin: 50pt;
+   /* padding: 10px; */
+   font-size: 20pt;
+   
+
+   
+}
+.image{
+    /* margin: 1px; */
+    padding: 3px;
+    margin-top: 5pt;
+     border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+    
+}
+.companyName{
+    background-color: #007b5e;
+    padding: 1pt 2pt 2pt 2pt;
+    color: #f1f1f1;
+    border-radius: 25px;
+}
+.menu{
+    
+    float: right;
+    margin: 10px;
+   
+}
+
+.content{
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 10px;
+    border-style: solid;
+    align-items: center;
+    color: seagreen;
+    width: 30%;
+    text-align: center;
+    background: beige;
+}
+
+.err{
+    
+    color:red;
+}
+.btn{
+    padding: 2px 30px 2px 30px;
+    margin: 10px
+}
+.btn1{
+    border-radius: 25px;
+}
+
+.subcard{
+    display: inline-block;
+    
+}
+
+.jobDetails{
+    display: inline-block;
+    padding: 20pt;
+    
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 3pt;
+    width: 100%;
+    background-color: #000000;
+    color: gray;
+    text-align: center;
+  }
